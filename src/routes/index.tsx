@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Container, Section, Grid, Stack } from "@/components/ui/layout-primitives";
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ContentGrid } from "@/features/content-grid";
 import { useArticles, useCourses, useProfessions } from "@/hooks/use-content";
