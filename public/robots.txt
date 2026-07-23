@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /area-do-aluno
+Disallow: /login
+Disallow: /matricula
+Disallow: /pagamento
+Disallow: /certificados
+Disallow: /busca

@@ -9,38 +9,738 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TrabalheConoscoRouteImport } from './routes/trabalhe-conosco'
+import { Route as TermosDeUsoRouteImport } from './routes/termos-de-uso'
+import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as ProfissoesRouteImport } from './routes/profissoes'
+import { Route as PoliticaDePrivacidadeRouteImport } from './routes/politica-de-privacidade'
+import { Route as ParceriasRouteImport } from './routes/parcerias'
+import { Route as PagamentoRouteImport } from './routes/pagamento'
+import { Route as OuvidoriaRouteImport } from './routes/ouvidoria'
+import { Route as NoticiasRouteImport } from './routes/noticias'
+import { Route as MatriculaRouteImport } from './routes/matricula'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as InstituicoesRouteImport } from './routes/instituicoes'
+import { Route as GuiasRouteImport } from './routes/guias'
+import { Route as GlossarioRouteImport } from './routes/glossario'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as DownloadsRouteImport } from './routes/downloads'
+import { Route as CursosRouteImport } from './routes/cursos'
+import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as ComparativosRouteImport } from './routes/comparativos'
+import { Route as CertificadosRouteImport } from './routes/certificados'
+import { Route as CategoriasRouteImport } from './routes/categorias'
+import { Route as CarreirasRouteImport } from './routes/carreiras'
+import { Route as BuscaRouteImport } from './routes/busca'
+import { Route as AutoresRouteImport } from './routes/autores'
+import { Route as ArtigosRouteImport } from './routes/artigos'
+import { Route as AreaDoAlunoRouteImport } from './routes/area-do-aluno'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProfissoesSlugRouteImport } from './routes/profissoes.$slug'
+import { Route as NoticiasSlugRouteImport } from './routes/noticias.$slug'
+import { Route as InstituicoesSlugRouteImport } from './routes/instituicoes.$slug'
+import { Route as GuiasSlugRouteImport } from './routes/guias.$slug'
+import { Route as GlossarioSlugRouteImport } from './routes/glossario.$slug'
+import { Route as FaqSlugRouteImport } from './routes/faq.$slug'
+import { Route as DownloadsSlugRouteImport } from './routes/downloads.$slug'
+import { Route as CursosSlugRouteImport } from './routes/cursos.$slug'
+import { Route as ComparativosSlugRouteImport } from './routes/comparativos.$slug'
+import { Route as CategoriasSlugRouteImport } from './routes/categorias.$slug'
+import { Route as CarreirasSlugRouteImport } from './routes/carreiras.$slug'
+import { Route as AutoresSlugRouteImport } from './routes/autores.$slug'
+import { Route as ArtigosSlugRouteImport } from './routes/artigos.$slug'
 
+const TrabalheConoscoRoute = TrabalheConoscoRouteImport.update({
+  id: '/trabalhe-conosco',
+  path: '/trabalhe-conosco',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermosDeUsoRoute = TermosDeUsoRouteImport.update({
+  id: '/termos-de-uso',
+  path: '/termos-de-uso',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SobreRoute = SobreRouteImport.update({
+  id: '/sobre',
+  path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfissoesRoute = ProfissoesRouteImport.update({
+  id: '/profissoes',
+  path: '/profissoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PoliticaDePrivacidadeRoute = PoliticaDePrivacidadeRouteImport.update({
+  id: '/politica-de-privacidade',
+  path: '/politica-de-privacidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ParceriasRoute = ParceriasRouteImport.update({
+  id: '/parcerias',
+  path: '/parcerias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PagamentoRoute = PagamentoRouteImport.update({
+  id: '/pagamento',
+  path: '/pagamento',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OuvidoriaRoute = OuvidoriaRouteImport.update({
+  id: '/ouvidoria',
+  path: '/ouvidoria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NoticiasRoute = NoticiasRouteImport.update({
+  id: '/noticias',
+  path: '/noticias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MatriculaRoute = MatriculaRouteImport.update({
+  id: '/matricula',
+  path: '/matricula',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InstituicoesRoute = InstituicoesRouteImport.update({
+  id: '/instituicoes',
+  path: '/instituicoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuiasRoute = GuiasRouteImport.update({
+  id: '/guias',
+  path: '/guias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GlossarioRoute = GlossarioRouteImport.update({
+  id: '/glossario',
+  path: '/glossario',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DownloadsRoute = DownloadsRouteImport.update({
+  id: '/downloads',
+  path: '/downloads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CursosRoute = CursosRouteImport.update({
+  id: '/cursos',
+  path: '/cursos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ComparativosRoute = ComparativosRouteImport.update({
+  id: '/comparativos',
+  path: '/comparativos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CertificadosRoute = CertificadosRouteImport.update({
+  id: '/certificados',
+  path: '/certificados',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CategoriasRoute = CategoriasRouteImport.update({
+  id: '/categorias',
+  path: '/categorias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CarreirasRoute = CarreirasRouteImport.update({
+  id: '/carreiras',
+  path: '/carreiras',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuscaRoute = BuscaRouteImport.update({
+  id: '/busca',
+  path: '/busca',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AutoresRoute = AutoresRouteImport.update({
+  id: '/autores',
+  path: '/autores',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArtigosRoute = ArtigosRouteImport.update({
+  id: '/artigos',
+  path: '/artigos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AreaDoAlunoRoute = AreaDoAlunoRouteImport.update({
+  id: '/area-do-aluno',
+  path: '/area-do-aluno',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProfissoesSlugRoute = ProfissoesSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ProfissoesRoute,
+} as any)
+const NoticiasSlugRoute = NoticiasSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => NoticiasRoute,
+} as any)
+const InstituicoesSlugRoute = InstituicoesSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => InstituicoesRoute,
+} as any)
+const GuiasSlugRoute = GuiasSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => GuiasRoute,
+} as any)
+const GlossarioSlugRoute = GlossarioSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => GlossarioRoute,
+} as any)
+const FaqSlugRoute = FaqSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => FaqRoute,
+} as any)
+const DownloadsSlugRoute = DownloadsSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => DownloadsRoute,
+} as any)
+const CursosSlugRoute = CursosSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => CursosRoute,
+} as any)
+const ComparativosSlugRoute = ComparativosSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ComparativosRoute,
+} as any)
+const CategoriasSlugRoute = CategoriasSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => CategoriasRoute,
+} as any)
+const CarreirasSlugRoute = CarreirasSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => CarreirasRoute,
+} as any)
+const AutoresSlugRoute = AutoresSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => AutoresRoute,
+} as any)
+const ArtigosSlugRoute = ArtigosSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ArtigosRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/area-do-aluno': typeof AreaDoAlunoRoute
+  '/artigos': typeof ArtigosRouteWithChildren
+  '/autores': typeof AutoresRouteWithChildren
+  '/busca': typeof BuscaRoute
+  '/carreiras': typeof CarreirasRouteWithChildren
+  '/categorias': typeof CategoriasRouteWithChildren
+  '/certificados': typeof CertificadosRoute
+  '/comparativos': typeof ComparativosRouteWithChildren
+  '/contato': typeof ContatoRoute
+  '/cursos': typeof CursosRouteWithChildren
+  '/downloads': typeof DownloadsRouteWithChildren
+  '/faq': typeof FaqRouteWithChildren
+  '/glossario': typeof GlossarioRouteWithChildren
+  '/guias': typeof GuiasRouteWithChildren
+  '/instituicoes': typeof InstituicoesRouteWithChildren
+  '/login': typeof LoginRoute
+  '/matricula': typeof MatriculaRoute
+  '/noticias': typeof NoticiasRouteWithChildren
+  '/ouvidoria': typeof OuvidoriaRoute
+  '/pagamento': typeof PagamentoRoute
+  '/parcerias': typeof ParceriasRoute
+  '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
+  '/profissoes': typeof ProfissoesRouteWithChildren
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sobre': typeof SobreRoute
+  '/termos-de-uso': typeof TermosDeUsoRoute
+  '/trabalhe-conosco': typeof TrabalheConoscoRoute
+  '/artigos/$slug': typeof ArtigosSlugRoute
+  '/autores/$slug': typeof AutoresSlugRoute
+  '/carreiras/$slug': typeof CarreirasSlugRoute
+  '/categorias/$slug': typeof CategoriasSlugRoute
+  '/comparativos/$slug': typeof ComparativosSlugRoute
+  '/cursos/$slug': typeof CursosSlugRoute
+  '/downloads/$slug': typeof DownloadsSlugRoute
+  '/faq/$slug': typeof FaqSlugRoute
+  '/glossario/$slug': typeof GlossarioSlugRoute
+  '/guias/$slug': typeof GuiasSlugRoute
+  '/instituicoes/$slug': typeof InstituicoesSlugRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
+  '/profissoes/$slug': typeof ProfissoesSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/area-do-aluno': typeof AreaDoAlunoRoute
+  '/artigos': typeof ArtigosRouteWithChildren
+  '/autores': typeof AutoresRouteWithChildren
+  '/busca': typeof BuscaRoute
+  '/carreiras': typeof CarreirasRouteWithChildren
+  '/categorias': typeof CategoriasRouteWithChildren
+  '/certificados': typeof CertificadosRoute
+  '/comparativos': typeof ComparativosRouteWithChildren
+  '/contato': typeof ContatoRoute
+  '/cursos': typeof CursosRouteWithChildren
+  '/downloads': typeof DownloadsRouteWithChildren
+  '/faq': typeof FaqRouteWithChildren
+  '/glossario': typeof GlossarioRouteWithChildren
+  '/guias': typeof GuiasRouteWithChildren
+  '/instituicoes': typeof InstituicoesRouteWithChildren
+  '/login': typeof LoginRoute
+  '/matricula': typeof MatriculaRoute
+  '/noticias': typeof NoticiasRouteWithChildren
+  '/ouvidoria': typeof OuvidoriaRoute
+  '/pagamento': typeof PagamentoRoute
+  '/parcerias': typeof ParceriasRoute
+  '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
+  '/profissoes': typeof ProfissoesRouteWithChildren
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sobre': typeof SobreRoute
+  '/termos-de-uso': typeof TermosDeUsoRoute
+  '/trabalhe-conosco': typeof TrabalheConoscoRoute
+  '/artigos/$slug': typeof ArtigosSlugRoute
+  '/autores/$slug': typeof AutoresSlugRoute
+  '/carreiras/$slug': typeof CarreirasSlugRoute
+  '/categorias/$slug': typeof CategoriasSlugRoute
+  '/comparativos/$slug': typeof ComparativosSlugRoute
+  '/cursos/$slug': typeof CursosSlugRoute
+  '/downloads/$slug': typeof DownloadsSlugRoute
+  '/faq/$slug': typeof FaqSlugRoute
+  '/glossario/$slug': typeof GlossarioSlugRoute
+  '/guias/$slug': typeof GuiasSlugRoute
+  '/instituicoes/$slug': typeof InstituicoesSlugRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
+  '/profissoes/$slug': typeof ProfissoesSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/area-do-aluno': typeof AreaDoAlunoRoute
+  '/artigos': typeof ArtigosRouteWithChildren
+  '/autores': typeof AutoresRouteWithChildren
+  '/busca': typeof BuscaRoute
+  '/carreiras': typeof CarreirasRouteWithChildren
+  '/categorias': typeof CategoriasRouteWithChildren
+  '/certificados': typeof CertificadosRoute
+  '/comparativos': typeof ComparativosRouteWithChildren
+  '/contato': typeof ContatoRoute
+  '/cursos': typeof CursosRouteWithChildren
+  '/downloads': typeof DownloadsRouteWithChildren
+  '/faq': typeof FaqRouteWithChildren
+  '/glossario': typeof GlossarioRouteWithChildren
+  '/guias': typeof GuiasRouteWithChildren
+  '/instituicoes': typeof InstituicoesRouteWithChildren
+  '/login': typeof LoginRoute
+  '/matricula': typeof MatriculaRoute
+  '/noticias': typeof NoticiasRouteWithChildren
+  '/ouvidoria': typeof OuvidoriaRoute
+  '/pagamento': typeof PagamentoRoute
+  '/parcerias': typeof ParceriasRoute
+  '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
+  '/profissoes': typeof ProfissoesRouteWithChildren
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/sobre': typeof SobreRoute
+  '/termos-de-uso': typeof TermosDeUsoRoute
+  '/trabalhe-conosco': typeof TrabalheConoscoRoute
+  '/artigos/$slug': typeof ArtigosSlugRoute
+  '/autores/$slug': typeof AutoresSlugRoute
+  '/carreiras/$slug': typeof CarreirasSlugRoute
+  '/categorias/$slug': typeof CategoriasSlugRoute
+  '/comparativos/$slug': typeof ComparativosSlugRoute
+  '/cursos/$slug': typeof CursosSlugRoute
+  '/downloads/$slug': typeof DownloadsSlugRoute
+  '/faq/$slug': typeof FaqSlugRoute
+  '/glossario/$slug': typeof GlossarioSlugRoute
+  '/guias/$slug': typeof GuiasSlugRoute
+  '/instituicoes/$slug': typeof InstituicoesSlugRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
+  '/profissoes/$slug': typeof ProfissoesSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/area-do-aluno'
+    | '/artigos'
+    | '/autores'
+    | '/busca'
+    | '/carreiras'
+    | '/categorias'
+    | '/certificados'
+    | '/comparativos'
+    | '/contato'
+    | '/cursos'
+    | '/downloads'
+    | '/faq'
+    | '/glossario'
+    | '/guias'
+    | '/instituicoes'
+    | '/login'
+    | '/matricula'
+    | '/noticias'
+    | '/ouvidoria'
+    | '/pagamento'
+    | '/parcerias'
+    | '/politica-de-privacidade'
+    | '/profissoes'
+    | '/sitemap.xml'
+    | '/sobre'
+    | '/termos-de-uso'
+    | '/trabalhe-conosco'
+    | '/artigos/$slug'
+    | '/autores/$slug'
+    | '/carreiras/$slug'
+    | '/categorias/$slug'
+    | '/comparativos/$slug'
+    | '/cursos/$slug'
+    | '/downloads/$slug'
+    | '/faq/$slug'
+    | '/glossario/$slug'
+    | '/guias/$slug'
+    | '/instituicoes/$slug'
+    | '/noticias/$slug'
+    | '/profissoes/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/area-do-aluno'
+    | '/artigos'
+    | '/autores'
+    | '/busca'
+    | '/carreiras'
+    | '/categorias'
+    | '/certificados'
+    | '/comparativos'
+    | '/contato'
+    | '/cursos'
+    | '/downloads'
+    | '/faq'
+    | '/glossario'
+    | '/guias'
+    | '/instituicoes'
+    | '/login'
+    | '/matricula'
+    | '/noticias'
+    | '/ouvidoria'
+    | '/pagamento'
+    | '/parcerias'
+    | '/politica-de-privacidade'
+    | '/profissoes'
+    | '/sitemap.xml'
+    | '/sobre'
+    | '/termos-de-uso'
+    | '/trabalhe-conosco'
+    | '/artigos/$slug'
+    | '/autores/$slug'
+    | '/carreiras/$slug'
+    | '/categorias/$slug'
+    | '/comparativos/$slug'
+    | '/cursos/$slug'
+    | '/downloads/$slug'
+    | '/faq/$slug'
+    | '/glossario/$slug'
+    | '/guias/$slug'
+    | '/instituicoes/$slug'
+    | '/noticias/$slug'
+    | '/profissoes/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/area-do-aluno'
+    | '/artigos'
+    | '/autores'
+    | '/busca'
+    | '/carreiras'
+    | '/categorias'
+    | '/certificados'
+    | '/comparativos'
+    | '/contato'
+    | '/cursos'
+    | '/downloads'
+    | '/faq'
+    | '/glossario'
+    | '/guias'
+    | '/instituicoes'
+    | '/login'
+    | '/matricula'
+    | '/noticias'
+    | '/ouvidoria'
+    | '/pagamento'
+    | '/parcerias'
+    | '/politica-de-privacidade'
+    | '/profissoes'
+    | '/sitemap.xml'
+    | '/sobre'
+    | '/termos-de-uso'
+    | '/trabalhe-conosco'
+    | '/artigos/$slug'
+    | '/autores/$slug'
+    | '/carreiras/$slug'
+    | '/categorias/$slug'
+    | '/comparativos/$slug'
+    | '/cursos/$slug'
+    | '/downloads/$slug'
+    | '/faq/$slug'
+    | '/glossario/$slug'
+    | '/guias/$slug'
+    | '/instituicoes/$slug'
+    | '/noticias/$slug'
+    | '/profissoes/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AreaDoAlunoRoute: typeof AreaDoAlunoRoute
+  ArtigosRoute: typeof ArtigosRouteWithChildren
+  AutoresRoute: typeof AutoresRouteWithChildren
+  BuscaRoute: typeof BuscaRoute
+  CarreirasRoute: typeof CarreirasRouteWithChildren
+  CategoriasRoute: typeof CategoriasRouteWithChildren
+  CertificadosRoute: typeof CertificadosRoute
+  ComparativosRoute: typeof ComparativosRouteWithChildren
+  ContatoRoute: typeof ContatoRoute
+  CursosRoute: typeof CursosRouteWithChildren
+  DownloadsRoute: typeof DownloadsRouteWithChildren
+  FaqRoute: typeof FaqRouteWithChildren
+  GlossarioRoute: typeof GlossarioRouteWithChildren
+  GuiasRoute: typeof GuiasRouteWithChildren
+  InstituicoesRoute: typeof InstituicoesRouteWithChildren
+  LoginRoute: typeof LoginRoute
+  MatriculaRoute: typeof MatriculaRoute
+  NoticiasRoute: typeof NoticiasRouteWithChildren
+  OuvidoriaRoute: typeof OuvidoriaRoute
+  PagamentoRoute: typeof PagamentoRoute
+  ParceriasRoute: typeof ParceriasRoute
+  PoliticaDePrivacidadeRoute: typeof PoliticaDePrivacidadeRoute
+  ProfissoesRoute: typeof ProfissoesRouteWithChildren
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SobreRoute: typeof SobreRoute
+  TermosDeUsoRoute: typeof TermosDeUsoRoute
+  TrabalheConoscoRoute: typeof TrabalheConoscoRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/trabalhe-conosco': {
+      id: '/trabalhe-conosco'
+      path: '/trabalhe-conosco'
+      fullPath: '/trabalhe-conosco'
+      preLoaderRoute: typeof TrabalheConoscoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/termos-de-uso': {
+      id: '/termos-de-uso'
+      path: '/termos-de-uso'
+      fullPath: '/termos-de-uso'
+      preLoaderRoute: typeof TermosDeUsoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sobre': {
+      id: '/sobre'
+      path: '/sobre'
+      fullPath: '/sobre'
+      preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/profissoes': {
+      id: '/profissoes'
+      path: '/profissoes'
+      fullPath: '/profissoes'
+      preLoaderRoute: typeof ProfissoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-de-privacidade': {
+      id: '/politica-de-privacidade'
+      path: '/politica-de-privacidade'
+      fullPath: '/politica-de-privacidade'
+      preLoaderRoute: typeof PoliticaDePrivacidadeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/parcerias': {
+      id: '/parcerias'
+      path: '/parcerias'
+      fullPath: '/parcerias'
+      preLoaderRoute: typeof ParceriasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pagamento': {
+      id: '/pagamento'
+      path: '/pagamento'
+      fullPath: '/pagamento'
+      preLoaderRoute: typeof PagamentoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ouvidoria': {
+      id: '/ouvidoria'
+      path: '/ouvidoria'
+      fullPath: '/ouvidoria'
+      preLoaderRoute: typeof OuvidoriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/noticias': {
+      id: '/noticias'
+      path: '/noticias'
+      fullPath: '/noticias'
+      preLoaderRoute: typeof NoticiasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/matricula': {
+      id: '/matricula'
+      path: '/matricula'
+      fullPath: '/matricula'
+      preLoaderRoute: typeof MatriculaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/instituicoes': {
+      id: '/instituicoes'
+      path: '/instituicoes'
+      fullPath: '/instituicoes'
+      preLoaderRoute: typeof InstituicoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guias': {
+      id: '/guias'
+      path: '/guias'
+      fullPath: '/guias'
+      preLoaderRoute: typeof GuiasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/glossario': {
+      id: '/glossario'
+      path: '/glossario'
+      fullPath: '/glossario'
+      preLoaderRoute: typeof GlossarioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/downloads': {
+      id: '/downloads'
+      path: '/downloads'
+      fullPath: '/downloads'
+      preLoaderRoute: typeof DownloadsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cursos': {
+      id: '/cursos'
+      path: '/cursos'
+      fullPath: '/cursos'
+      preLoaderRoute: typeof CursosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/comparativos': {
+      id: '/comparativos'
+      path: '/comparativos'
+      fullPath: '/comparativos'
+      preLoaderRoute: typeof ComparativosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/certificados': {
+      id: '/certificados'
+      path: '/certificados'
+      fullPath: '/certificados'
+      preLoaderRoute: typeof CertificadosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/categorias': {
+      id: '/categorias'
+      path: '/categorias'
+      fullPath: '/categorias'
+      preLoaderRoute: typeof CategoriasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/carreiras': {
+      id: '/carreiras'
+      path: '/carreiras'
+      fullPath: '/carreiras'
+      preLoaderRoute: typeof CarreirasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/busca': {
+      id: '/busca'
+      path: '/busca'
+      fullPath: '/busca'
+      preLoaderRoute: typeof BuscaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/autores': {
+      id: '/autores'
+      path: '/autores'
+      fullPath: '/autores'
+      preLoaderRoute: typeof AutoresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/artigos': {
+      id: '/artigos'
+      path: '/artigos'
+      fullPath: '/artigos'
+      preLoaderRoute: typeof ArtigosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/area-do-aluno': {
+      id: '/area-do-aluno'
+      path: '/area-do-aluno'
+      fullPath: '/area-do-aluno'
+      preLoaderRoute: typeof AreaDoAlunoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,22 +748,279 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/profissoes/$slug': {
+      id: '/profissoes/$slug'
+      path: '/$slug'
+      fullPath: '/profissoes/$slug'
+      preLoaderRoute: typeof ProfissoesSlugRouteImport
+      parentRoute: typeof ProfissoesRoute
+    }
+    '/noticias/$slug': {
+      id: '/noticias/$slug'
+      path: '/$slug'
+      fullPath: '/noticias/$slug'
+      preLoaderRoute: typeof NoticiasSlugRouteImport
+      parentRoute: typeof NoticiasRoute
+    }
+    '/instituicoes/$slug': {
+      id: '/instituicoes/$slug'
+      path: '/$slug'
+      fullPath: '/instituicoes/$slug'
+      preLoaderRoute: typeof InstituicoesSlugRouteImport
+      parentRoute: typeof InstituicoesRoute
+    }
+    '/guias/$slug': {
+      id: '/guias/$slug'
+      path: '/$slug'
+      fullPath: '/guias/$slug'
+      preLoaderRoute: typeof GuiasSlugRouteImport
+      parentRoute: typeof GuiasRoute
+    }
+    '/glossario/$slug': {
+      id: '/glossario/$slug'
+      path: '/$slug'
+      fullPath: '/glossario/$slug'
+      preLoaderRoute: typeof GlossarioSlugRouteImport
+      parentRoute: typeof GlossarioRoute
+    }
+    '/faq/$slug': {
+      id: '/faq/$slug'
+      path: '/$slug'
+      fullPath: '/faq/$slug'
+      preLoaderRoute: typeof FaqSlugRouteImport
+      parentRoute: typeof FaqRoute
+    }
+    '/downloads/$slug': {
+      id: '/downloads/$slug'
+      path: '/$slug'
+      fullPath: '/downloads/$slug'
+      preLoaderRoute: typeof DownloadsSlugRouteImport
+      parentRoute: typeof DownloadsRoute
+    }
+    '/cursos/$slug': {
+      id: '/cursos/$slug'
+      path: '/$slug'
+      fullPath: '/cursos/$slug'
+      preLoaderRoute: typeof CursosSlugRouteImport
+      parentRoute: typeof CursosRoute
+    }
+    '/comparativos/$slug': {
+      id: '/comparativos/$slug'
+      path: '/$slug'
+      fullPath: '/comparativos/$slug'
+      preLoaderRoute: typeof ComparativosSlugRouteImport
+      parentRoute: typeof ComparativosRoute
+    }
+    '/categorias/$slug': {
+      id: '/categorias/$slug'
+      path: '/$slug'
+      fullPath: '/categorias/$slug'
+      preLoaderRoute: typeof CategoriasSlugRouteImport
+      parentRoute: typeof CategoriasRoute
+    }
+    '/carreiras/$slug': {
+      id: '/carreiras/$slug'
+      path: '/$slug'
+      fullPath: '/carreiras/$slug'
+      preLoaderRoute: typeof CarreirasSlugRouteImport
+      parentRoute: typeof CarreirasRoute
+    }
+    '/autores/$slug': {
+      id: '/autores/$slug'
+      path: '/$slug'
+      fullPath: '/autores/$slug'
+      preLoaderRoute: typeof AutoresSlugRouteImport
+      parentRoute: typeof AutoresRoute
+    }
+    '/artigos/$slug': {
+      id: '/artigos/$slug'
+      path: '/$slug'
+      fullPath: '/artigos/$slug'
+      preLoaderRoute: typeof ArtigosSlugRouteImport
+      parentRoute: typeof ArtigosRoute
+    }
   }
 }
 
+interface ArtigosRouteChildren {
+  ArtigosSlugRoute: typeof ArtigosSlugRoute
+}
+
+const ArtigosRouteChildren: ArtigosRouteChildren = {
+  ArtigosSlugRoute: ArtigosSlugRoute,
+}
+
+const ArtigosRouteWithChildren =
+  ArtigosRoute._addFileChildren(ArtigosRouteChildren)
+
+interface AutoresRouteChildren {
+  AutoresSlugRoute: typeof AutoresSlugRoute
+}
+
+const AutoresRouteChildren: AutoresRouteChildren = {
+  AutoresSlugRoute: AutoresSlugRoute,
+}
+
+const AutoresRouteWithChildren =
+  AutoresRoute._addFileChildren(AutoresRouteChildren)
+
+interface CarreirasRouteChildren {
+  CarreirasSlugRoute: typeof CarreirasSlugRoute
+}
+
+const CarreirasRouteChildren: CarreirasRouteChildren = {
+  CarreirasSlugRoute: CarreirasSlugRoute,
+}
+
+const CarreirasRouteWithChildren = CarreirasRoute._addFileChildren(
+  CarreirasRouteChildren,
+)
+
+interface CategoriasRouteChildren {
+  CategoriasSlugRoute: typeof CategoriasSlugRoute
+}
+
+const CategoriasRouteChildren: CategoriasRouteChildren = {
+  CategoriasSlugRoute: CategoriasSlugRoute,
+}
+
+const CategoriasRouteWithChildren = CategoriasRoute._addFileChildren(
+  CategoriasRouteChildren,
+)
+
+interface ComparativosRouteChildren {
+  ComparativosSlugRoute: typeof ComparativosSlugRoute
+}
+
+const ComparativosRouteChildren: ComparativosRouteChildren = {
+  ComparativosSlugRoute: ComparativosSlugRoute,
+}
+
+const ComparativosRouteWithChildren = ComparativosRoute._addFileChildren(
+  ComparativosRouteChildren,
+)
+
+interface CursosRouteChildren {
+  CursosSlugRoute: typeof CursosSlugRoute
+}
+
+const CursosRouteChildren: CursosRouteChildren = {
+  CursosSlugRoute: CursosSlugRoute,
+}
+
+const CursosRouteWithChildren =
+  CursosRoute._addFileChildren(CursosRouteChildren)
+
+interface DownloadsRouteChildren {
+  DownloadsSlugRoute: typeof DownloadsSlugRoute
+}
+
+const DownloadsRouteChildren: DownloadsRouteChildren = {
+  DownloadsSlugRoute: DownloadsSlugRoute,
+}
+
+const DownloadsRouteWithChildren = DownloadsRoute._addFileChildren(
+  DownloadsRouteChildren,
+)
+
+interface FaqRouteChildren {
+  FaqSlugRoute: typeof FaqSlugRoute
+}
+
+const FaqRouteChildren: FaqRouteChildren = {
+  FaqSlugRoute: FaqSlugRoute,
+}
+
+const FaqRouteWithChildren = FaqRoute._addFileChildren(FaqRouteChildren)
+
+interface GlossarioRouteChildren {
+  GlossarioSlugRoute: typeof GlossarioSlugRoute
+}
+
+const GlossarioRouteChildren: GlossarioRouteChildren = {
+  GlossarioSlugRoute: GlossarioSlugRoute,
+}
+
+const GlossarioRouteWithChildren = GlossarioRoute._addFileChildren(
+  GlossarioRouteChildren,
+)
+
+interface GuiasRouteChildren {
+  GuiasSlugRoute: typeof GuiasSlugRoute
+}
+
+const GuiasRouteChildren: GuiasRouteChildren = {
+  GuiasSlugRoute: GuiasSlugRoute,
+}
+
+const GuiasRouteWithChildren = GuiasRoute._addFileChildren(GuiasRouteChildren)
+
+interface InstituicoesRouteChildren {
+  InstituicoesSlugRoute: typeof InstituicoesSlugRoute
+}
+
+const InstituicoesRouteChildren: InstituicoesRouteChildren = {
+  InstituicoesSlugRoute: InstituicoesSlugRoute,
+}
+
+const InstituicoesRouteWithChildren = InstituicoesRoute._addFileChildren(
+  InstituicoesRouteChildren,
+)
+
+interface NoticiasRouteChildren {
+  NoticiasSlugRoute: typeof NoticiasSlugRoute
+}
+
+const NoticiasRouteChildren: NoticiasRouteChildren = {
+  NoticiasSlugRoute: NoticiasSlugRoute,
+}
+
+const NoticiasRouteWithChildren = NoticiasRoute._addFileChildren(
+  NoticiasRouteChildren,
+)
+
+interface ProfissoesRouteChildren {
+  ProfissoesSlugRoute: typeof ProfissoesSlugRoute
+}
+
+const ProfissoesRouteChildren: ProfissoesRouteChildren = {
+  ProfissoesSlugRoute: ProfissoesSlugRoute,
+}
+
+const ProfissoesRouteWithChildren = ProfissoesRoute._addFileChildren(
+  ProfissoesRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AreaDoAlunoRoute: AreaDoAlunoRoute,
+  ArtigosRoute: ArtigosRouteWithChildren,
+  AutoresRoute: AutoresRouteWithChildren,
+  BuscaRoute: BuscaRoute,
+  CarreirasRoute: CarreirasRouteWithChildren,
+  CategoriasRoute: CategoriasRouteWithChildren,
+  CertificadosRoute: CertificadosRoute,
+  ComparativosRoute: ComparativosRouteWithChildren,
+  ContatoRoute: ContatoRoute,
+  CursosRoute: CursosRouteWithChildren,
+  DownloadsRoute: DownloadsRouteWithChildren,
+  FaqRoute: FaqRouteWithChildren,
+  GlossarioRoute: GlossarioRouteWithChildren,
+  GuiasRoute: GuiasRouteWithChildren,
+  InstituicoesRoute: InstituicoesRouteWithChildren,
+  LoginRoute: LoginRoute,
+  MatriculaRoute: MatriculaRoute,
+  NoticiasRoute: NoticiasRouteWithChildren,
+  OuvidoriaRoute: OuvidoriaRoute,
+  PagamentoRoute: PagamentoRoute,
+  ParceriasRoute: ParceriasRoute,
+  PoliticaDePrivacidadeRoute: PoliticaDePrivacidadeRoute,
+  ProfissoesRoute: ProfissoesRouteWithChildren,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SobreRoute: SobreRoute,
+  TermosDeUsoRoute: TermosDeUsoRoute,
+  TrabalheConoscoRoute: TrabalheConoscoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
