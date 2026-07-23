@@ -16,6 +16,8 @@ export interface Institution extends BaseEntity {
 export interface Author extends BaseEntity {
   kind: "author";
   name: string;
+  /** Alias de exibição — normalmente igual a `name`; usado por componentes genéricos. */
+  title: string;
   excerpt: string;
   avatar?: MediaAsset;
   role: string;
