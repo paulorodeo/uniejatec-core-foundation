@@ -13,7 +13,7 @@ export function Breadcrumb() {
   const segments = pathname.split("/").filter(Boolean);
   const crumbs = segments.map((seg, i) => {
     const to = "/" + segments.slice(0, i + 1).join("/");
-    const known = Object.values(routes).find((r) => r.path === to && !r.dynamic);
+    const known = Object.values(routes).find((r) => r.path === to && !("dynamic" in r && r.dynamic));
     const label = known?.label ?? decodeURIComponent(seg).replace(/-/g, " ");
     return { to, label };
   });
