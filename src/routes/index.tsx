@@ -41,11 +41,12 @@ function HomePage() {
                 {siteConfig.description}
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button asChild-fallback>
-                  <Link to={routes.coursesHub.path} className="inline-flex h-11 items-center rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground hover:opacity-90">
-                    Explorar cursos
-                  </Link>
-                </Button>
+                <Link
+                  to={routes.coursesHub.path}
+                  className="inline-flex h-11 items-center rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground hover:opacity-90"
+                >
+                  Explorar cursos
+                </Link>
                 <Link
                   to={routes.articlesHub.path}
                   className="inline-flex h-11 items-center rounded-md border border-border px-5 text-sm font-medium hover:bg-muted"
